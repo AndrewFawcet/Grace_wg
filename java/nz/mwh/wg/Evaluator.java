@@ -529,6 +529,7 @@ public class Evaluator extends ASTConstructors implements Visitor<GraceObject> {
     // maybe the thing to count +++++++++++++++++++++++++++++++++++
 
     static GraceObject evaluateProgram(ASTNode program) {
+        System.out.println("  evaluateProgram(ASTNode program   ");
         BaseObject lexicalParent = (BaseObject) basePrelude();
         return evaluateProgram(program, lexicalParent);
     }

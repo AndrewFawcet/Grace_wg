@@ -1,6 +1,6 @@
 var z := "789"
 print (z)
-var x := object {
+var objectXXX := object {
     var variableX := "123456"
 
     print ""
@@ -14,9 +14,14 @@ var x := object {
         self.variableX := (self.variableX) ++ "789"
     }
 }
+print "----------0-----------"
+var objectYYY := object {
+    var variableY := "Hello"
+}
 print "----------1-----------"
-x.foo()
+objectXXX.foo()
 print "----------2-----------"
-x.foo()
+objectXXX.foo()
 print "----------3-----------"
 print (z)
+print (objectYYY.variableY)
